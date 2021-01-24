@@ -3,6 +3,7 @@
 The codes here are speaker extraction, where only target speaker's voice will be extracted given this target speaker's characteristics. In paper 1) SpEx, we use MFCC features toghether with LSTMs to jointly learn target speaker's characteristics from a different utterance of target speaker. In paper 2) SpEx+, as the time-domian speech encoder is applied that results in thousands of frames, the speaker encoder adopts a shared speech encoder and ResBlock to jointly optimize a multi-task learning task. The rests of the network of 1) and 2) are same. You also can replace the network by using i-vector, or x-vector network.
 
 If you are interested in speech separation to get all the speaker's voices in the mixture, please move to https://github.com/xuchenglin28/speech_separation
+
 If you are interested in frequency-domain speaker extraction with tensorflow implementation, please move to https://github.com/xuchenglin28/speaker_extraction
 
 ## Papers

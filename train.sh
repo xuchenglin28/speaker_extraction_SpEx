@@ -24,7 +24,7 @@ spk_list=data/wsj0_2mix_extr_tr.spk
 sample_rate=8000
 lr=0.001
 
-python -u train.py --gpu $gpuid --epochs $epochs --batch-size $batch_size --checkpoint $cpt_dir 
-    --L1=$L1 --L2=$L2 --L3=$L3 --N=$N --B=$B --O=$O --P=$P --Q=$Q --num_spks=$num_spks
-    --spk_embed_dim=$spk_embed_dim --train_dir=$train_dir --dev_dir=$dev_dir --spk_list=$spk_list
+python -u train.py --gpu $gpuid --epochs $epochs --batch-size $batch_size --checkpoint $cpt_dir \
+    --L1=$L1 --L2=$L2 --L3=$L3 --N=$N --B=$B --O=$O --P=$P --Q=$Q --num_spks=$num_spks \
+    --spk_embed_dim=$spk_embed_dim --train_dir=$train_dir --dev_dir=$dev_dir --spk_list=$spk_list \
     --sample_rate=$sample_rate --lr=$lr
